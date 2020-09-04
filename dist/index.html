@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emergency Everywhere</title>
+  <script type="text/javascript" src="Clover.js"></script>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="header hero">
+    <div class="navbar">
+      <div class="container header-container">
+        <div class="logo">
+          <img src="img/XRmassSymbol.png" class="logo-png">
+        </div>
+        <nav class="main-navigation">
+          <a href="index.html">Home</a>
+          <a href="https://xrmass.org/wiki/emergency-everywhere/">Info</a>
+          <a href="https://xrmass.org/welcome/">Join Us</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <main class="main-content">
+      <div class="intro">
+        <div class="element element1">
+          <h1>Emergency Everywhere</h1>
+        </div>
+        <div class="element element2">
+          <p>
+            It is time to tell the truth About
+            the climate and ecological emergency
+            the entire world is facing. We demand
+            that cities and towns across Massachusetts
+            declare a Climate and Ecological Emergency!
+          </p>
+          <hr>
+        </div>
+      </div>
+      <div class="doodle">
+        <css-doodle>
+
+          :doodle{
+          @grid: 5 / 100vmax;
+          background: #0a0c27;
+
+          }
+
+          border-radius: @repeat(4, @rand(50%, 60%));
+
+          :before {
+          font-size: 8rem;
+          content: !;
+          color: #0a0c27;
+          }
+
+          @random {
+          animation: move 5s linear alternate infinite;
+          }
+
+          @random(0.1) {
+          animation: flicker 5s ease infinite;
+          }
+
+          @keyframes move {
+          0% {
+          transform: translate(
+          @rand(-50%, 50%), @rand(-50%, 50%)
+          );
+          }
+
+          100% {
+          transform: translate(
+          @rand(-50%, 50%), @rand(-50%, 50%)
+          );
+          }
+          }
+
+          @keyframes flicker {
+          0% {
+          opacity: 1;
+          }
+
+          50% {
+          opacity: 0;
+          }
+
+          100% {
+          opacity: 1;
+          }
+          }
+
+          background: hsla(calc(360 - @i * 4), 40%, 50%, @r.8);
+          transform:
+          scale(@r(.2, .7))
+          translate(@m2.@r(+50%, -50%));
+
+        </css-doodle>
+
+        <div class="t1 town"><a href="Arlington.html">Arlington</a></div>
+        <div class="t2 town"><a href="CapeCod.html">Cape Cod</a></div>
+        <div class="t3 town"><a href="Cambridge.html">Cambridge</a></div>
+        <div class="t4 town"><a href="Newburyport.html">Newburyport</a></div>
+        <div class="t5 town"><a href="Somerville.html">Somerville</a></div>
+        <div class="t6 town"><a href="Watertown.html">Watertown</a></div>
+        <div class="t7 town"><a href="Wellesley.html">Wellesley</a></div>
+        <div class="t8 town"><a href="Worcester.html">Worcester</a></div>
+      </div>
+    </main>
+
+
+  </div>
+  <!--.content-->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="box">
+        <a href="https://xrmass.org/welcome/">
+          <h2>Learn About Extincion Rebellion Boston</h2>
+        </a>
+      </div>
+      <div class="box">
+        <h2>Follow Us</h2>
+        <nav class="social-nav">
+          <a href="https://www.facebook.com/XRebelBoston/"><span>Facebook</span></a>
+          <a href="https://twitter.com/XRBoston"><span>Twitter</span></a>
+          <a href="https://www.instagram.com/xrboston/"><span>Instagram</span></a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+
+</body>
+
+</html>

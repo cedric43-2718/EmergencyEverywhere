@@ -1,0 +1,337 @@
+:root{
+  --cyan: #17a2b8;
+  --teal: #20c997;
+  --grey: #adb5bd;
+  --yellow: #ffc107;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-family: 'FUCXED CAPS';
+}
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container .main-content{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #0a0c27;
+  color: white;
+  /* padding-bottom: 20rem; */
+}
+
+.element1{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.element1 h1{
+  font-size: 5rem;
+  width: 100%;
+}
+
+.element2{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.element p{
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.doodle .t1{
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t2{
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t3{
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t4{
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t5{
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t6{
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t7{
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doodle .t8{
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.town a{
+  text-decoration: none;
+  font-family: 'FUCXED CAPS';
+  font-size: 4rem;
+  color: white;
+}
+
+h2 {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+.header{
+  position: relative;
+}
+
+.hero{
+  background-image: url(../img/ClimateEmergency4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar{
+/* background-color: #000099; */
+/* background-color: #003366; */
+/* background-color: #006699; */
+/* background-color: #0066ff; */
+/* background-color: #6699ff; */
+  background-color: white;
+  position: absolute;
+  padding: 1rem 0;
+  top: 1rem;
+  width: 100%;
+
+}
+
+.main-navigation a:hover{
+  color: green;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(min-width: 768px){
+  .header-container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo{
+    margin: 1rem 2rem 0;
+}
+
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem 0;
+}
+
+@media(min-width: 768px){
+  .main-navigation{
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 0 25rem;
+    margin-top: 0;
+  }
+
+}
+
+.main-navigation a{
+  font-family: 'FUCXED CAPS';
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  /* margin-right: 2rem; */
+  text-align: center;
+}
+
+.logo .logo-png:hover{
+  color: green;
+}
+
+.content {
+    background-color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+}
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.content span {
+    color:#db008d;
+}
+
+@media screen and (min-width:480px) {
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entry {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .entry {
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+.footer{
+  background-color: #986297;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+
+}
+
+
+.footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media(min-width: 768px){
+  .footer .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer .box{
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  .footer .box h2{
+    justify-content: center;
+  }
+
+}
+
+.social-nav{
+  display: flex;
+  justify-content: center;
+
+}
+
+@media(min-width: 768px){
+  .social-nav{
+    justify-content: center;
+  }
+
+}
+
+.social-nav span{
+  display: none;
+}
+
+.social-nav a{
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.social-nav a::before{
+  font-family: "Font Awesome 5 Brands";
+  color: white;
+}
+
+.social-nav a[href*='facebook.com']::before{
+  content: "\f39e";
+}
+
+.social-nav a[href*='twitter.com']::before{
+  content: "\f099";
+}
+
+.social-nav a[href*='youtube.com']::before{
+  content: "\f167";
+}
+
+.social-nav a[href*='instagram.com']::before{
+  content: "\f16d";
+}
+
+.social-nav a[href*='pinterest.com']::before{
+  content: "\f0d2";
+}
