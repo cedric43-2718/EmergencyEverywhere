@@ -1,0 +1,287 @@
+:root{
+  --arlington: #3860aa;
+  --capeCod: #75d0f1;
+  --cambridge: #f7ee6a;
+  --newburyport: #c80082;
+  --somerville: #ffc11e;
+  --watertown: #cf6297;
+  --wellesley: #14aa37;
+  --worcester: #3860aa;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-family: 'FUCXED CAPS';
+}
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+h2 {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Main Content */
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container .main-content{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* background-color: var(--arlington); */
+}
+
+.container .main-content, .arlington{
+  background-color: var(--arlington);
+}
+
+/* .container .main-content, .cape-cod{
+  background-color: var(--capeCod);
+}
+
+.container .main-content, .cambridge{
+  background-color: var(--cambridge);
+}
+
+.container .main-content, .newburyport{
+  background-color: var(--newburyport);
+}
+
+.container .main-content, .somerville{
+  background-color: var(--somerville);
+}
+
+.container .main-content, .watertown{
+  background-color: var(--watertown);
+}
+
+.container .main-content, .wellesley{
+  background-color: var(--wellesley);
+}
+
+.container .main-content, .worcester{
+  background-color: var(--worcester);
+} */
+
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  /* background-color: #3860aa; */
+  color: white;
+}
+
+.element1{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.element1 h1{
+  font-size: 5rem;
+  width: 100%;
+}
+
+.element2{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.element p{
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Header */
+
+.header{
+  position: relative;
+}
+
+.hero{
+  background-image: url(../img/ClimateEmergency4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar{
+/* background-color: #000099; */
+/* background-color: #003366; */
+/* background-color: #006699; */
+/* background-color: #0066ff; */
+/* background-color: #6699ff; */
+  background-color: white;
+  position: absolute;
+  padding: 1rem 0;
+  top: 1rem;
+  width: 100%;
+
+}
+
+.main-navigation a:hover{
+  color: green;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(min-width: 768px){
+  .header-container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo{
+    margin: 1rem 2rem 0;
+}
+
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem 0;
+}
+
+@media(min-width: 768px){
+  .main-navigation{
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 0 25rem;
+    margin-top: 0;
+  }
+
+}
+
+.main-navigation a{
+  font-family: 'FUCXED CAPS';
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.logo .logo-png:hover{
+  color: green;
+}
+
+@media screen and (min-width:480px) {
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.footer{
+  background-color: #986297;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+
+}
+
+
+.footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media(min-width: 768px){
+  .footer .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer .box{
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  .footer .box h2{
+    justify-content: center;
+  }
+
+}
+
+.social-nav{
+  display: flex;
+  justify-content: center;
+
+}
+
+@media(min-width: 768px){
+  .social-nav{
+    justify-content: center;
+  }
+
+}
+
+.social-nav span{
+  display: none;
+}
+
+.social-nav a{
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.social-nav a::before{
+  font-family: "Font Awesome 5 Brands";
+  color: white;
+}
+
+.social-nav a[href*='facebook.com']::before{
+  content: "\f39e";
+}
+
+.social-nav a[href*='twitter.com']::before{
+  content: "\f099";
+}
+
+.social-nav a[href*='youtube.com']::before{
+  content: "\f167";
+}
+
+.social-nav a[href*='instagram.com']::before{
+  content: "\f16d";
+}
+
+.social-nav a[href*='pinterest.com']::before{
+  content: "\f0d2";
+}
