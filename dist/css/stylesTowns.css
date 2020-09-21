@@ -54,7 +54,7 @@ img {
   /* background-color: var(--arlington); */
 }
 
-.container .main-content, .arlington{
+.container .main-content{
   background-color: var(--arlington);
 }
 
