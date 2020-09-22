@@ -68,6 +68,18 @@ h1{
   line-height: 1.5;
 }
 
+.doodle{
+  display: inline-block; /* shrink to fit */
+  width: 100%;           /* whatever width you like */
+  position: relative;    /* so .content can use position: absolute */
+}
+
+.doodle::after {
+  /* padding-top: 56.25%;  */
+  display: block;
+  content: '';
+}
+
 .doodle .t1{
   position: absolute;
   top: 24%;
