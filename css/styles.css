@@ -27,12 +27,14 @@ h1{
 .container {
     max-width: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 .container .main-content{
   width: 100%;
   overflow: hidden;
   position: relative;
+  display: flex;
   /* z-index: -1; */
 }
 
