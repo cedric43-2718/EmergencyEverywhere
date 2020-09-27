@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'FUCXED CAPS';
+  src: url('css/FUCXEDCAPS-v2.otf') format("opentype");
+}
+
 :root{
   --cyan: #17a2b8;
   --teal: #20c997;
